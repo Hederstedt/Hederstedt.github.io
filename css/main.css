@@ -59,7 +59,8 @@ img {
     }
 }
 li {
-    border: solid 5px;
-    padding: 5px;
+    border: solid 2px;
+    padding: 2px;
     border-radius: 6px;
+    background-color: darkorange; 
 }
