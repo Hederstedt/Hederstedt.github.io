@@ -2,16 +2,73 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <!-- link to main stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <title>Inlämningsuppgift 10</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inlämningsuppgift 10</title>
+            <!--Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--min css fil-->
+        <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h2>Inlämningsuppgift 10</h2>
-    </br>
-    </br>
+    <div class="jumbotron jumbotron-fluid text-center">
+	<div class="container">
+		<h1 class="display-3">Inlämningsuppgift 10</h1>
+		<p class="lead">Skriv ett HTML-dokument som innehåller följande element: en t extruta, en knapp och en
+lista. När man klickar på knappen så ska det läggas till ett nytt element sist i listan, som har
+samma text som den som står i textrutan. När man klickar på någon av elementen i listan så
+ska texten i textrutan ersättas med det som står i elementet man klickade på. Dessutom så
+ska elementen i listan byta bakgrundsfärg när man klickar på dem.</p>
+	</div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://github.com/Hederstedt">github.com/Hederstedt</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+          <li><a href="/index.html">Hem</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Övningar <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/Övning 2.html">Övning 2</a></li>
+            <li><a href="/Övning3.html">Övning 3</a></li>
+            <li><a href="/övning4.html">Övning 4</a></li>
+            <li><a href="/övning5.html">Övning 5</a></li>
+            <li><a href="/övning7.html">Övning 7</a></li>
+            <li><a href="/Övning11.html">Övning 11</a></li>
+          </ul>
+        </li>
+      </ul>
+        <ul class="nav navbar-nav">     
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inlämningsuppgifter<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/Hemuppgift1.html">Hemuppgift 1</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/Inlämningsuppgift6.html">Inlämningsuppgift 6</a></li>
+            <li><a href="/Inlämningsuppgift8.html">Inlämningsuppgift 8</a></li>
+            <li><a href="/Inlämningsuppgift10.html">Inlämningsuppgift 10</a></li>
+            <li><a href="/Inlämningsuppgift12.html">Inlämningsuppgift 12</a></li>
+            <li><a href="/Inlämningsuppgift14.html">Inlämningsuppgift 14</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav> 
     <h3>Listan</h3>
 <ol id="lista">
     
@@ -27,6 +84,10 @@
                 <li><h2><a href="https://github.com/Hederstedt">github.com/Hederstedt</a></h2></li>           
             </ul>
         </footer>
+            <!--jQuery-->
+    <script src="js/jQuery.js"></script>
+    <!-- Bootstrap minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
  <script src="/js/Inlämningsuppgift10.js"></script>
 </body>
 </html>
