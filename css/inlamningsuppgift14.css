@@ -1,0 +1,37 @@
+.divEngelska {
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: darkorange;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.divTecken {
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: firebrick;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.divSvenska {
+    border: solid 2px;
+    border-radius: 5px;
+    background-color: sandybrown;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.buttonCss {
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.buttonrowCss{
+    margin: 5 px;
+    padding: 5px;
+}
