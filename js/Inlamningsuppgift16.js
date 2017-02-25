@@ -36,8 +36,8 @@ class App extends React.Component {
         this.setState({
             selectedCountryIndex: index
         })
+
     }
-    
     inputText(e) {
         const newTxt = e.target.value;
         let countries = this.state.lista;
@@ -46,7 +46,6 @@ class App extends React.Component {
             lista: countries
         })
     }
-    
     blur(e) {
         this.setState({
             selectedCountryIndex: null
