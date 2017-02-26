@@ -123,7 +123,7 @@ class App extends React.Component {
         else {
             this.componentWillUnmount();
             let elId = 0;
-            if(typeof(apiData) == undefined)
+            if(typeof apiData === 'undefined')
                 {
                     this.setState({
                         error:"there is a problem"
