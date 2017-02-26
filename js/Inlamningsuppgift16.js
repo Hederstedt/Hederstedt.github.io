@@ -122,18 +122,17 @@ class App extends React.Component {
             });
         else {
             this.componentWillUnmount();
-            let elId = 0;
-            if(typeof apiData === 'undefined')
+            if(typeof apiData !== 'undefined')
                 {
-                    this.setState({
-                        error:"there is a problem"
-                    })
+                    apiData.forEach(element => {
+                    landList.push(element.name + "   Folkmängd:  " + element.population)
+                     });
                 }
             else
                 {
-            apiData.forEach(element => {
-                landList.push(element.name + "   Folkmängd:  " + element.population), elId++
-            });
+                   this.setState({
+                   error:"there is a problem"
+                    });
                 }
             this.setState({
                 lista: landList
