@@ -63,7 +63,7 @@ class App extends React.Component {
 
         }
         else {
-            if (this.state.lista.length < 0) {
+            if (this.state.lista.length <= 0) {
                 return (<div><span className="errormessage">Det blev visst något fel när vi skulle hämta datan ? du kanske måste tillåta osäkra scripts?</span></div>);
             }
             else {
