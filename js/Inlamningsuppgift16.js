@@ -10,6 +10,7 @@ class App extends React.Component {
         this.inputText = this.inputText.bind(this);
         this.blur = this.blur.bind(this);
         this.state = {
+            error: 'noProblemo',
             count: 3,
             lista: landList,
             filterText: '',
@@ -53,7 +54,7 @@ class App extends React.Component {
     }
 
     render() {
-        if (this.state.count >= 0) {
+        if (this.state.count > 0) {
             if (this.state.count % 2 == 0) {
                 return (<div><span className="spancountdownmo">Din data är klar om: {this.state.count} sekunder</span></div>);
             }
@@ -63,9 +64,8 @@ class App extends React.Component {
 
         }
         else {
-            console.log(apiData.length);
-            if (typeof(apiData) == 'undefined' || apiData.length <= 0) {
-                
+            console.log(this.state.error)
+            if (this.state.error != 'noProblemo') {
                 return (<div><span className="errormessage">Det blev visst något fel när vi skulle hämta datan ? du kanske måste tillåta osäkra scripts?</span></div>);
             }
             else {
@@ -123,9 +123,18 @@ class App extends React.Component {
         else {
             this.componentWillUnmount();
             let elId = 0;
+            if(typeof(apiData) == 'undefiend')
+                {
+                    this.setState({
+                        error:"there is a problem"
+                    })
+                }
+            else
+                {
             apiData.forEach(element => {
                 landList.push(element.name + "   Folkmängd:  " + element.population), elId++
             });
+                }
             this.setState({
                 lista: landList
             });
