@@ -14,10 +14,12 @@
             <div class="jumbotron jumbotron-fluid text-center">
 	<div class="container">
 		<h1 class="display-3">Inlämningsuppgift 12</h1>
-		<p class="lead">Skriv ett HTML-dokument med ett button element. Lägg till fler element efter behov. Alla
-resultat ska synas direkt på webbsidan. När man klickar på knappen ska ni göra ett AJAX
-GET request till URL http://forverkliga.se/JavaScript/api/simple.php
-Sidan som ligger där är ett API som kan anropas på flera sätt.</p>
+		<p class="lead">Nu är det dags för ett mer realistiskt exempel. 
+			Utgå från övning 11. Anropa API:et med world=whatever. 
+			Du ska få en JSON-lista med objekt som innehåller landsinformation. 
+			Skriv ut svaret på följande frågor på webbsidan. Tips: typeof(variabel)==='object' 
+			talar om ifall variabel är ett objekt eller någon annan datatyp. OBS! Det är inte ok 
+			att bara skriva ut JSON-strängen direkt.</p>
 	</div>
 </div>
     <nav class="navbar navbar-default">
@@ -68,7 +70,18 @@ Sidan som ligger där är ett API som kan anropas på flera sätt.</p>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>   
-<ol id="Listan"></ol>
+<div class="container">
+    <div class="row">
+
+           <ol class="col-lg-6">
+<li>Hur många människor finns det i hela världen?</li>
+<li>Hur många människor finns i Europa?</li>
+<li>Hur många kvinnor finns det i Zimbabwe?</li>
+<li>Vilket land har minst befolkning?
+<li>[VG] Vilken kontinent har högst befolkning?</li>
+                </ol>        <ol id="Listan" class="col-lg-6"></ol>
+        </div>
+</div>
 
 <button id="btnNewWay" class="btn-primary">tryck här för frågor och svar</button>
 <footer>
