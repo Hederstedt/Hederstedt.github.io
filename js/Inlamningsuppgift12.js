@@ -7,7 +7,7 @@ let li4 = document.createElement('li')
 let li5 = document.createElement('li')
 let apiData = [];
 function newWay() {
-    fetch('http://forverkliga.se/JavaScript/api/simple.php?world=all')
+    fetch('https://forverkliga.se/JavaScript/api/simple.php?world=all')
   .then(
     function (response) {
         if (response.status !== 200) {
