@@ -97,7 +97,7 @@ class App extends React.Component {
             1000
         );
         console.log("api call körs nu ")
-        fetch('http://forverkliga.se/JavaScript/api/simple.php?world=all')
+        fetch('https://forverkliga.se/JavaScript/api/simple.php?world=all')
             .then(function (response) {
                 if (response.status != 200 && response.readyState != 4) {
                     console("problemos buddy " + response.status)
